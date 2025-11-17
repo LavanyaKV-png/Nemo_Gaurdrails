@@ -1,0 +1,18 @@
+models:
+  - type: "chat"
+    engine: "openai"
+    model: "gpt-4o"
+    temperature: 0.2
+
+rails:
+  config:
+    - rails/toxicity.co
+    - rails/bias.co
+    - rails/injection.co
+    - rails/pii.co
+
+actions:
+  python_module: "actions"
+
+logging:
+  level: "INFO"
