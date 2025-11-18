@@ -1,18 +1,12 @@
 models:
-  - type: "chat"
-    engine: "openai"
-    model: "gpt-4o"
-    temperature: 0.2
+  - type: main
+    engine: openai
+    model: gpt-3.5-turbo
+    api_key: ${OPENAI_API_KEY}
 
 rails:
-  config:
+  flows:
     - rails/toxicity.co
     - rails/bias.co
     - rails/injection.co
     - rails/pii.co
-
-actions:
-  python_module: "actions"
-
-logging:
-  level: "INFO"

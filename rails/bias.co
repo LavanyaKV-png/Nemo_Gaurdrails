@@ -1,0 +1,6 @@
+rule {
+  name: "prevent_bias"
+  when: "response"
+  check: "contains_bias"
+  action: "warn_toxicity"
+}

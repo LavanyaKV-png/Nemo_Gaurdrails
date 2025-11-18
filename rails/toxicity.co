@@ -1,0 +1,6 @@
+rule {
+  name: "block_toxicity"
+  when: "response"
+  check: "contains_toxicity"
+  action: "warn_toxicity"
+}

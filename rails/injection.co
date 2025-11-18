@@ -1,0 +1,6 @@
+rule {
+  name: "block_prompt_injection"
+  when: "prompt"
+  check: "contains_injection"
+  action: "warn_toxicity"
+}

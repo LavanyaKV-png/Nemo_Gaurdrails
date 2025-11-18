@@ -1,0 +1,6 @@
+rule {
+  name: "block_pii"
+  when: "response"
+  check: "contains_pii"
+  action: "replace_sensitive_info"
+}
